@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Opoweb</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="buscador_ce.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="	stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&	family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class='utility_wrapper'>
+		<div id="buscador_articulos_constitucion" class="div_utilidad">
+			<h4 class="titulo_utilidad">Buscador de art
+culos de constituci
+n</h4>
+			<input id="input_articulo_constitucion" list="articulos_constitucion_destacados" onclick="clearInput('input_articulo_constitucion')" 	placeholder="N
+mero art
+culo (1-169)"></input>
+			<datalist id="articulos_constitucion_destacados">
+				<option value="67">67. Cortes Generales</option>
+				<option value="68">68. Congreso de los diputados</option>
+				<option value="69">69. Senado</option>
+				<option value="70">70. Incompatibilidad Diputados y Senadores</option>
+				<option value="72">72. Reglamentos y formación de Cortes Generales</option>
+				<option value="113">113. Moción de censura</option>
+				<option value="134">134. Presupuestos Generales del Estado</option>
+			</datalist>
+			<button id="boton_buscar_articulo_constitucion">Buscar</button>
+			<button id="boton_extraer_articulo_constitucion" onclick="extraer_articulo_constitucion()">Ver aqui</button>
+		</div>
+		<div id='articulo_extraido_div' hidden>
+			<p id='articulo_extraido_titulo'></p>
+				<blockquote id='articulo_extraido_contenido'>
+				</blockquote>
+			<button id='copy_extracted_doc_button'>copiar</button>
+		</div>
+	</div>
+	<script src="buscador_ce.js"></script>
+</body>
+</html>
