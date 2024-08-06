@@ -1,0 +1,59 @@
+.div_utilidad{
+	font-family: 'Jetbrains Mono', sans-serif;
+	border: 2px solid black;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 10px;
+}
+
+.titulo_utilidad{
+	font: bold;
+	color: skyblue;
+}
+
+#articulo_extraido_div{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 350;
+	font-style: normal;
+	color: black;
+	margin: 5px;
+	border-radius: 5px;
+	background: rgb(255,0,0,0.2);
+	padding: 10px;
+}
+
+#articulo_extraido_titulo{
+	font: bold;
+
+	font-weight: 500;
+}
+
+#articulo_extraido_contenido_div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-items: center;
+}
+
+button {
+  background-color: salmon;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius:5px;
+
+  transition: background-color .2s ease-in-out;
+
+  margin: 2px;
+  padding: 2px, 0px, 2px, 0px;
+}
+
+button:hover{
+	background-color: black;
+}

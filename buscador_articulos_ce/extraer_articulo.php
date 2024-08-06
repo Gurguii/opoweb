@@ -7,6 +7,7 @@ if(is_null($article_number) || $article_number < 1 || $article_number > 169){
 
 // Create a cURL request to fetch the content
 $url = "https://www.laconstitucion.es/articulo-$article_number-de-la-constitucion-espanola.html";
+
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $html = curl_exec($ch);
@@ -22,15 +23,31 @@ $xpath = new DOMXPath($doc);
 
 // Query for elements with the class 'articulo'
 $articleElements = $xpath->query('//*[@class="articulo"]');
-$paragraphs = "";
+$contentParagraphs = "";
 
 foreach ($articleElements as $articleElement) {
     $paragraphElements = $xpath->query('p', $articleElement);
     foreach ($paragraphElements as $paragraphElement) {
-        #$paragraphs .= $paragraphElement->textContent . "</br></br>";
-        $paragraphs .= "<p class='extracted_doc_paragraph'>$paragraphElement->textContent</p>";
+        $contentParagraphs .= "$paragraphElement->textContent</br>";
     }
 }
+
+// Testing - Query for <p> elements within the div of class "columnas titulo_txt" to extract an explanation of the article 
+$explanationElements = $xpath->query('//*[@class="columnas titulo_txt"]');
+$explanationParagraphs = "";
+
+foreach($explanationElements as $paragraph){
+    $paragraphElements = $xpath->query('p', $paragraph);
+    foreach($paragraphElements as $paragraph){
+        $explanationParagraphs .= "$paragraph->textContent";
+    }
+}
+
+$data = array(
+    'content' => $contentParagraphs,
+    'explanation' => $explanationParagraphs
+);
+
 // Do something with the content
-echo $paragraphs;
+echo json_encode($data);
 ?>

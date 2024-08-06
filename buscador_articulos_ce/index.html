@@ -13,12 +13,8 @@
 <body>
 	<div class='utility_wrapper'>
 		<div id="buscador_articulos_constitucion" class="div_utilidad">
-			<h4 class="titulo_utilidad">Buscador de art
-culos de constituci
-n</h4>
-			<input id="input_articulo_constitucion" list="articulos_constitucion_destacados" onclick="clearInput('input_articulo_constitucion')" 	placeholder="N
-mero art
-culo (1-169)"></input>
+			<h4 class="titulo_utilidad">Buscador de artículos de constitución</h4>
+			<input id="input_articulo_constitucion" list="articulos_constitucion_destacados" onclick="clearInput('input_articulo_constitucion')" 	placeholder="Número artículo (1-169)"></input>
 			<datalist id="articulos_constitucion_destacados">
 				<option value="67">67. Cortes Generales</option>
 				<option value="68">68. Congreso de los diputados</option>
@@ -27,15 +23,24 @@ culo (1-169)"></input>
 				<option value="72">72. Reglamentos y formación de Cortes Generales</option>
 				<option value="113">113. Moción de censura</option>
 				<option value="134">134. Presupuestos Generales del Estado</option>
+				<option value="161">161. Funciones y poderes del Tribunal Constitucional</option>
 			</datalist>
 			<button id="boton_buscar_articulo_constitucion">Buscar</button>
-			<button id="boton_extraer_articulo_constitucion" onclick="extraer_articulo_constitucion()">Ver aqui</button>
+			<button id="boton_extraer_articulo_constitucion">Ver aqui</button>
+
 		</div>
 		<div id='articulo_extraido_div' hidden>
-			<p id='articulo_extraido_titulo'></p>
-				<blockquote id='articulo_extraido_contenido'>
+			<div id='articulo_extraido_contenido_div'>
+				<p id='articulo_extraido_titulo'></p>
+				<button id='copy_extracted_doc_button'>copiar</button>
+				<button id="boton_mostrar_explicacion">mostrar explicación</button>
+			</div>
+			<blockquote id='articulo_extraido_contenido'></blockquote>
+			<div id='articulo_extraido_explicacion_div' hidden>
+				<p><b>Explicación</b></p>
+				<blockquote id='articulo_extraido_explicacion_contenido'>
 				</blockquote>
-			<button id='copy_extracted_doc_button'>copiar</button>
+			</div>
 		</div>
 	</div>
 	<script src="buscador_ce.js"></script>
