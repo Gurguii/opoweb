@@ -29,15 +29,7 @@ copyButton.addEventListener('click', (event) => {
 });
 
 copyButton.addEventListener('mouseover', (event) => {
-    document.getElementById("articulo_extraido_contenido").style.color = 'blue';
-});
-
-copyButton.addEventListener('mouseout', (event) => {
-    document.getElementById("articulo_extraido_contenido").style.color = '';
-});
-
-copyButton.addEventListener('touchend', (event) => {
-    copyButtonFunction();
+    document.getElementsByClassName("ce_article_explanation_paragraph").style.color = ""
 });
 
 input.addEventListener('keydown', (event) => {
@@ -51,13 +43,20 @@ input.addEventListener('keydown', (event) => {
 });
 
 function copyButtonFunction(){
-  const paragraphs = document.getElementsByClassName("extracted_doc_paragraph");
+  const paragraphs = document.getElementsByClassName('ce_article_explanation_paragraph');
+  
+  if(!paragraphs){
+    console.error("couldn't get element");
+  }
+
   const paragraphTexts = [];
   
-  for (let i = 0; i < paragraphs.length; ++i) {
-    paragraphTexts.push(paragraphs[i].innerText);
-  }
+  for(const p of paragraphs){
+    paragraphTexts.push(p.innerText);
+  };
+
   const contentToCopy = paragraphTexts.join('\n');
+
   navigator.clipboard.writeText(contentToCopy)
   .then(() => {
     copyButton.textContent = "copiado!";
@@ -101,37 +100,44 @@ function buscar_articulo_constitucion(){
 };
 
 async function extraer_articulo_constitucion() {
-    const num_articulo = parseInt(input.value, 10);
-    if (!comprobar_articulo(num_articulo)) {
-        console.log("returning");
-        return;
-    }
-    const url = `extraer_articulo.php?articulo=${num_articulo}`;
-    await fetch(url, {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-        },
-    })
-    .then(response => response.json())
-    .then(data => {
-        // data.content -> summary of the contents
-        // data.explanation -> explanation of the article
-        const title = document.getElementById('articulo_extraido_titulo');
-        const content_container = document.getElementById('articulo_extraido_contenido');
-        const explanation_container = document.getElementById('articulo_extraido_explicacion_contenido'); 
+  const num_articulo = parseInt(input.value, 10);
+  if (!comprobar_articulo(num_articulo)) {
+    console.log("returning");
+    return;
+  }
 
-        if(!title || !content_container || !explanation_container){
-            window.error("There are missing HTML elements, please reload to try fix this.");
-            return;
-        }
+  const url = `extraer_articulo.php?articulo=${num_articulo}`;
 
-        title.innerHTML = `Artículo ${num_articulo} de la Constitución Española`;
-        content_container.innerHTML = data.content;
-        explanation_container.innerHTML = data.explanation;
-    })
-    .catch(error => {
-        console.error('Error fetching data:', error);
+  try {
+    const response = await fetch(url, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
     });
+
+    const data = await response.json();
+
+    if (data.error) {
+      window.alert(data.error);
+      return;
+    }
+
+    const title = document.getElementById('articulo_extraido_titulo');
+    const contentContainer = document.getElementById('articulo_extraido_contenido');
+    const explanationContainer = document.getElementById('articulo_extraido_explicacion_contenido');
+
+    if (!title || !contentContainer || !explanationContainer) {
+      window.alert("There are missing HTML elements, please reload to try fix this.");
+      return;
+    }
+
+    title.innerHTML = `Artículo ${num_articulo} de la Constitución Española`;
+    contentContainer.innerHTML = data.content;
+    explanationContainer.innerHTML = data.explanation;
     extractedDiv.hidden = false;
-};
+
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
+}

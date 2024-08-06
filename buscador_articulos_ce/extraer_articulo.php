@@ -11,7 +11,13 @@ $url = "https://www.laconstitucion.es/articulo-$article_number-de-la-constitucio
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $html = curl_exec($ch);
+$status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close($ch);
+
+if($status_code != 200){
+    echo json_encode(array("error" => "status code returned $status_code"));
+    return;
+}
 
 // Parse the HTML using a PHP library like DOMDocument
 $doc = new DOMDocument();
@@ -28,7 +34,7 @@ $contentParagraphs = "";
 foreach ($articleElements as $articleElement) {
     $paragraphElements = $xpath->query('p', $articleElement);
     foreach ($paragraphElements as $paragraphElement) {
-        $contentParagraphs .= "$paragraphElement->textContent</br>";
+        $contentParagraphs .= "<p class='ce_article_explanation_paragraph'>$paragraphElement->textContent</p>";
     }
 }
 

@@ -7,7 +7,6 @@
 }
 
 .titulo_utilidad{
-	font: bold;
 	color: skyblue;
 }
 
@@ -24,7 +23,6 @@
 
 #articulo_extraido_titulo{
 	font: bold;
-
 	font-weight: 500;
 }
 
@@ -46,7 +44,6 @@ button {
   font-size: 10px;
   cursor: pointer;
   border: none;
-  border-radius:5px;
 
   transition: background-color .2s ease-in-out;
 
@@ -56,4 +53,11 @@ button {
 
 button:hover{
 	background-color: black;
+}
+
+#copy_extracted_doc_button:hover{
+	.ce_article_explanation_paragraph{
+		color: blue;
+		font: bold;
+	}
 }

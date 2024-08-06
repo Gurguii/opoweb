@@ -1,0 +1,3 @@
+LOTC -> ley orgánica del tribunal constitucional
+LOPJ -> ley orgánica del poder judicial
+LEC -> ley de enjuiciamiento civil
