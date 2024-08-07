@@ -95,7 +95,7 @@ function buscar_articulo_constitucion(){
 		return;
     }
 	window.open(url, "_blank");
-    extractedDiv.hidden = true;
+  extractedDiv.hidden = true;
 	clearInput(input.id);
 };
 

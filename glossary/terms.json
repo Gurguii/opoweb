@@ -1,0 +1,67 @@
+[
+  {
+    "term": "Resolución motivada",
+    "definition": "Son aquellas decisiones judiciales que explican de manera clara y concisa los fundamentos jurídicos en los que se basan. Es decir, el juez o tribunal debe exponer las razones por las cuales ha llegado a una determinada conclusión",
+    "type": "word"
+  },
+  {
+    "term": "Resolución de providencia",
+    "definition": "Son aquellas decisiones judiciales que resuelven cuestiones de trámite o administrativas durante el proceso, sin entrar a valorar el fondo del asunto",
+    "type": "word"
+  },
+  {
+    "term": "Auto",
+    "definition": "Es una resolución judicial que resuelve cuestiones incidentales o de trámite durante el proceso, pero no pone fin al mismo",
+    "type": "word"
+  },
+  {
+    "term": "Sentencia",
+    "definition": "Es la resolución judicial que pone fin a un proceso, resolviendo definitivamente el fondo del asunto",
+    "type": "word"
+  },
+  {
+    "term": "Título ejecutivo",
+    "definition": "Un título ejecutivo es un documento que otorga a una persona (el acreedor) el derecho a exigir el cumplimiento forzoso de una obligación determinada",
+    "type": "word"
+  },
+  {
+    "term": "Delito doloso",
+    "definition": "Delito cometido a sabiendas y por voluntad",
+    "type": "word"
+  },
+  {
+    "term": "Decreto ley",
+    "definition": "Norma con rango de ley aprobada por el Gobierno en situaciones de extraordinaria y urgente necesidad. Su vigencia puede ser limitada en el tiempo y requiere de una posterior validación por parte del parlamento",
+    "type": "word"
+  },
+  {
+    "term": "Decreto legislativo",
+    "definition": "Norma con rango de ley que el Gobierno está autorizado a dictar por una ley previa del Parlamento para regular materias con mayor detalle y especificidad.",
+    "type": "word"
+  },
+  {
+    "term": "Ley orgánica",
+    "definition": "Ley formal requerida constitucionalmente para regular ciertas materias. Suele requerir algún tipo de mayoría cualificada, puesto que regula aspectos básicos de la convivencia de los ciudadanos",
+    "type": "word"
+  },
+  {
+    "term": "Prerrogativa de gracia",
+    "definition": "Poder discrecional que tiene el rey para indultar penas impuestas por los tribunales. Acto de clemencia no sujeto a control judicial. Puede ser utilizado sin hacer conocimiento público de él.",
+    "type": "word"
+  },
+  {
+    "term": "Delito flagrante",
+    "definition": "Según el Tribunal Supremo sentencia del 6 de marzo del 2001 (nº511/1999) - delito que se está cometiendo o se acaba de cometer cuando el delincuente es sorprendido",
+    "type": "word"
+  },
+  {
+    "term": "LOTC",
+    "definition": "Ley Orgánica del Tribunal Constitucional",
+    "type": "acronym"
+  },
+  {
+    "term": "CGPJ",
+    "definition": "Consejo General del Poder Judicial",
+    "type": "acronym"
+  }
+]
