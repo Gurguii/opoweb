@@ -63,5 +63,35 @@
     "term": "CGPJ",
     "definition": "Consejo General del Poder Judicial",
     "type": "acronym"
+  },
+  {
+    "term": "TREBEP",
+    "definition": "Texto Refundido del Estatuto Básico del Empleado Público, básicamente el EBEP con todos los DLC",
+    "type": "acronym"
+  },
+  {
+    "term": "EBEP",
+    "definition": "Estatuto Básico del Empleado Público",
+    "type": "acronym"
+  },
+  {
+    "term": "RGPD",
+    "definition": "Reglamento General de Procesamiento de Datos",
+    "type": "acronym"
+  },
+  {
+    "term": "LOPDGDD",
+    "definition": "Ley Orgánica de Protección de Datos y Garantía de los Derechos Digitales",
+    "type": "acronym"
+  },
+  {
+    "term": "Secretariado de Estado",
+    "definition": "Órgano de apoyo del Consejo de Ministros, de las Cámaras Delegadas del Gobierno y de la Comisión General de Secretarios de Estado y Subsecretarios",
+    "type": "definition"
+  },
+  {
+    "term": "Gabinete",
+    "definition": "Órgano de apoyo político y técnico al Presidente del Gobierno, Ministros, Vicepresidentes y Secretarios de Estado",
+    "type": "definition"
   }
 ]

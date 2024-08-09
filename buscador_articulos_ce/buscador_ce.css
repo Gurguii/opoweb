@@ -1,27 +1,44 @@
+#wrapper{
+	display: grid;
+	grid-template-rows: .6fr 3fr;
+}
+
+#buscador_articulos_constitucion{
+	justify-self: center;
+	grid-row-start: 1;
+}
+
+#extractedDocsDiv{
+	grid-row-start: 2;
+	height: 100vh;
+	overflow-y: scroll;
+}
+
 .div_utilidad{
 	font-family: 'Jetbrains Mono', sans-serif;
 	border: 2px solid black;
 	border-radius: 5px;
-	display: inline-block;
 	padding: 10px;
+	display: flex;
+	flex-direction: column;
 }
 
-.titulo_utilidad{
+.utility_title{
 	color: skyblue;
 }
 
-#articulo_extraido_div{
+.extracted_article_div{
 	font-family: 'Roboto', sans-serif;
 	font-weight: 350;
 	font-style: normal;
 	color: black;
-	margin: 5px;
+	margin: 10px;
 	border-radius: 5px;
 	background: rgb(255,0,0,0.2);
 	padding: 10px;
 }
 
-#articulo_extraido_titulo{
+.ce_article_title{
 	font: bold;
 	font-weight: 500;
 }

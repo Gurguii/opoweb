@@ -3,7 +3,7 @@ include "SQLiteConnection.php";
 include "Utils.php";
 
 $conn = new App\SQLiteConnection();
-$pdo = $conn->connect("sqlite" . App\Config::DB_PATH);
+$pdo = $conn->connect("sqlite:" . App\Config::DB_PATH);
 
 if($pdo == null){
 	printf("Couldn't connect to the database\n");
