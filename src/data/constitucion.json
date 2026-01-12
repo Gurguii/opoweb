@@ -1,0 +1,41 @@
+{
+  "ley": "Constitución Española",
+  "secciones": [
+    {
+      "id": "titulo_preliminar",
+      "nombre": "Título Preliminar",
+      "articulos": [
+        { "id": 1, "titulo": "Estado social y democrático", "contenido": "España se constituye en un Estado social y democrático de Derecho...", "tags": ["soberanía", "valores"] },
+        { "id": 2, "titulo": "Unidad y autonomía", "contenido": "La Constitución se fundamenta en la indisoluble unidad de la Nación española...", "tags": ["autonomía", "unidad"] },
+        { "id": 3, "titulo": "Castellano y lenguas oficiales", "contenido": "El castellano es la lengua española oficial del Estado...", "tags": ["idiomas"] },
+        { "id": 4, "titulo": "Bandera de España", "contenido": "La bandera de España está formada por tres franjas horizontales, roja, amarilla y roja...", "tags": ["símbolos"] },
+        { "id": 5, "titulo": "Capitalidad", "contenido": "La capital del Estado es la villa de Madrid.", "tags": ["madrid"] },
+        { "id": 6, "titulo": "Partidos políticos", "contenido": "Los partidos políticos expresan el pluralismo político...", "tags": ["política"] },
+        { "id": 7, "titulo": "Sindicatos y asociaciones", "contenido": "Los sindicatos de trabajadores y las asociaciones empresariales contribuyen a la defensa de sus intereses...", "tags": ["economía", "trabajo"] },
+        { "id": 8, "titulo": "Fuerzas Armadas", "contenido": "Las Fuerzas Armadas tienen como misión garantizar la soberanía e independencia de España...", "tags": ["defensa"] },
+        { "id": 9, "titulo": "Principios de legalidad", "contenido": "Los ciudadanos y los poderes públicos están sujetos a la Constitución y al resto del ordenamiento jurídico...", "tags": ["jerarquía", "seguridad"] }
+      ]
+    },
+    {
+      "id": "titulo_1",
+      "nombre": "Título I. De los derechos y deberes fundamentales",
+      "articulos": [
+        { "id": 10, "titulo": "Dignidad de la persona", "contenido": "La dignidad de la persona, los derechos inviolables que le son inherentes...", "tags": ["fundamentos"] },
+        { "id": 14, "titulo": "Igualdad ante la ley", "contenido": "Los españoles son iguales ante la ley, sin que pueda prevalecer discriminación alguna...", "tags": ["igualdad"] },
+        { "id": 15, "titulo": "Derecho a la vida", "contenido": "Todos tienen derecho a la vida y a la integridad física y moral, sin que, en ningún caso, puedan ser sometidos a tortura...", "tags": ["vida", "tortura"] },
+        { "id": 16, "titulo": "Libertad ideológica y religiosa", "contenido": "Se garantiza la libertad ideológica, religiosa y de culto de los individuos y las comunidades...", "tags": ["religión", "laicismo"] },
+        { "id": 17, "titulo": "Derecho a la libertad y seguridad", "contenido": "Toda persona tiene derecho a la libertad y a la seguridad. Nadie puede ser privado de su libertad...", "tags": ["detención", "habeas corpus"] },
+        { "id": 18, "titulo": "Derecho al honor e intimidad", "contenido": "Se garantiza el derecho al honor, a la intimidad personal y familiar y a la propia imagen. El domicilio es inviolable...", "tags": ["domicilio", "comunicaciones"] },
+        { "id": 19, "titulo": "Libertad de residencia y circulación", "contenido": "Los españoles tienen derecho a elegir libremente su residencia y a circular por el territorio nacional...", "tags": ["viajes", "fronteras"] },
+        { "id": 20, "titulo": "Libertad de expresión", "contenido": "Se reconocen y protegen los derechos a expresar y difundir libremente los pensamientos, ideas y opiniones...", "tags": ["prensa", "censura"] },
+        { "id": 21, "titulo": "Derecho de reunión", "contenido": "Se reconoce el derecho de reunión pacífica y sin armas. El ejercicio de este derecho no necesitará autorización previa...", "tags": ["manifestación"] },
+        { "id": 22, "titulo": "Derecho de asociación", "contenido": "Se reconoce el derecho de asociación. Las asociaciones que persigan fines o utilicen medios tipificados como delito son ilegales...", "tags": ["asociaciones"] },
+        { "id": 23, "titulo": "Participación política", "contenido": "Los ciudadanos tienen el derecho a participar en los asuntos públicos, directamente o por medio de representantes...", "tags": ["voto", "sufragio"] },
+        { "id": 24, "titulo": "Tutela judicial efectiva", "contenido": "Todas las personas tienen derecho a obtener la tutela efectiva de los jueces y tribunales en el ejercicio de sus derechos...", "tags": ["justicia", "defensa"] },
+        { "id": 25, "titulo": "Principio de legalidad penal", "contenido": "Nadie puede ser condenado o sancionado por acciones u omisiones que en el momento de producirse no constituyan delito...", "tags": ["penas", "cárcel"] },
+        { "id": 27, "titulo": "Derecho a la educación", "contenido": "Todos tienen el derecho a la educación. Se reconoce la libertad de enseñanza...", "tags": ["colegios", "universidad"] },
+        { "id": 28, "titulo": "Sindicación y huelga", "contenido": "Todos tienen derecho a sindicarse libremente. Se reconoce el derecho a la huelga de los trabajadores...", "tags": ["huelga", "sindicatos"] }
+      ]
+    }
+  ]
+}
